@@ -4,6 +4,8 @@ We are going to use ansible code for provisioning static website using nginx dur
 
 ## Getting Started
 
+Step 0: Create SSH key under ~/.ssh
+
 Step 1: Setup a network using Terraform
 
 Step 2: Create AMI using packer and ansible inside the above-created network
@@ -11,6 +13,12 @@ Step 2: Create AMI using packer and ansible inside the above-created network
 Step 3: Setup EC2 instance inside the network with packer AMI
 
 Provide access key and token in Terraform and Packer code.
+
+### Generate SSH Key ###
+
+If you already do not have ssh keys(id_rsa & id_rsa.pub) under ~/.ssh, use below ssh-keygen command to create new ssh keys.
+
+ssh-keygen -t rsa -b 4096
 
 ### Command to run network Terraform
 
